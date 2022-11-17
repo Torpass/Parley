@@ -1,0 +1,14 @@
+C:\Users\Pastor Jose\source\repos\Windows_forms_sql\Parley\bin\Debug\Parley.exe.config
+C:\Users\Pastor Jose\source\repos\Windows_forms_sql\Parley\bin\Debug\Parley.exe
+C:\Users\Pastor Jose\source\repos\Windows_forms_sql\Parley\bin\Debug\Parley.pdb
+C:\Users\Pastor Jose\source\repos\Windows_forms_sql\Parley\obj\Debug\Parley.csproj.AssemblyReference.cache
+C:\Users\Pastor Jose\source\repos\Windows_forms_sql\Parley\obj\Debug\Parley.csproj.SuggestedBindingRedirects.cache
+C:\Users\Pastor Jose\source\repos\Windows_forms_sql\Parley\obj\Debug\Parley.Properties.Resources.resources
+C:\Users\Pastor Jose\source\repos\Windows_forms_sql\Parley\obj\Debug\Parley.csproj.GenerateResource.cache
+C:\Users\Pastor Jose\source\repos\Windows_forms_sql\Parley\obj\Debug\Parley.csproj.CoreCompileInputs.cache
+C:\Users\Pastor Jose\source\repos\Windows_forms_sql\Parley\obj\Debug\Parley.exe
+C:\Users\Pastor Jose\source\repos\Windows_forms_sql\Parley\obj\Debug\Parley.pdb
+C:\Users\Pastor Jose\source\repos\Windows_forms_sql\Parley\obj\Debug\Parley.Inicio.resources
+C:\Users\Pastor Jose\source\repos\Windows_forms_sql\Parley\obj\Debug\Parley.Beisbol.resources
+C:\Users\Pastor Jose\source\repos\Windows_forms_sql\Parley\obj\Debug\Parley.Futbol.resources
+C:\Users\Pastor Jose\source\repos\Windows_forms_sql\Parley\obj\Debug\Parley.Form1.resources
