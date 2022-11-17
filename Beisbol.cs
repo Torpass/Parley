@@ -37,7 +37,7 @@ namespace Parley
                     auxiliar._juegos_ganados = Convert.ToInt32(txtWon.Text);
                     auxiliar._juegos_perdidos = Convert.ToInt32(txtLost.Text);
 
-                    if (auxiliar._juegos_ganados > 0 && auxiliar._juegos_perdidos > 0)
+                    if (auxiliar._juegos_ganados > 0 && auxiliar._juegos_perdidos > 0 && auxiliar._liga != "")
                     {
                         MessageBox.Show("Equipo registrado");
                         clubs.Create(auxiliar);
@@ -45,9 +45,10 @@ namespace Parley
                     }
                     else
                     {
-                        MessageBox.Show("ERROR: No pueden haber numeros negativos o iguales a 0", "Fatal error");
+                        MessageBox.Show("ERROR: No pueden haber numeros negativos, iguales a 0 o campos vacios", "Fatal error");
                         error1.SetError(txtLost, "No numeros negativos o iguales a 0");
                         error1.SetError(txtWon, "No numeros negativos o iguales a 0");
+                        error1.SetError(liga, "Pendiente que no este basio");
                         txtWon.Focus();
                         txtWon.Text = ""; txtLost.Text = "";
                     }

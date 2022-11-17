@@ -26,7 +26,9 @@ namespace Parley
             {
                 Inicio x = new Inicio();
                 x.labelName.Text = txtName.Text;
+
                 x.Show();
+
                 
             }
             else
@@ -45,7 +47,6 @@ namespace Parley
                     Inicio x = new Inicio();
                     x.labelName.Text = txtName.Text;
                     x.Show();
-
                 }
                 else
                 {

@@ -243,7 +243,7 @@
             this.ClientSize = new System.Drawing.Size(455, 459);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.Name = "Beisbol";
             this.Text = "Beisbol";

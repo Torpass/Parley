@@ -40,12 +40,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.labelName = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
-            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.Cerrar,
@@ -53,7 +56,7 @@
             this.saludoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(581, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(1282, 33);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -77,14 +80,14 @@
             // besibolToolStripMenuItem
             // 
             this.besibolToolStripMenuItem.Name = "besibolToolStripMenuItem";
-            this.besibolToolStripMenuItem.Size = new System.Drawing.Size(171, 34);
+            this.besibolToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.besibolToolStripMenuItem.Text = "Beisbol";
             this.besibolToolStripMenuItem.Click += new System.EventHandler(this.besibolToolStripMenuItem_Click);
             // 
             // futbolToolStripMenuItem
             // 
             this.futbolToolStripMenuItem.Name = "futbolToolStripMenuItem";
-            this.futbolToolStripMenuItem.Size = new System.Drawing.Size(171, 34);
+            this.futbolToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.futbolToolStripMenuItem.Text = "Futbol";
             this.futbolToolStripMenuItem.Click += new System.EventHandler(this.futbolToolStripMenuItem_Click);
             // 
@@ -117,7 +120,7 @@
             // 
             this.labelName.AutoSize = true;
             this.labelName.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelName.Location = new System.Drawing.Point(249, 45);
+            this.labelName.Location = new System.Drawing.Point(243, 8);
             this.labelName.Name = "labelName";
             this.labelName.Size = new System.Drawing.Size(0, 31);
             this.labelName.TabIndex = 3;
@@ -125,31 +128,53 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(9, 89);
+            this.label2.Location = new System.Drawing.Point(6, 67);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(572, 40);
             this.label2.TabIndex = 4;
             this.label2.Text = "Bienvenido al parley. Aun estamos trabajando en la funcionalidad del programa, \r\n" +
     "pero por ahora puede registrar a tus equipos favoritos\r\n";
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.pictureBox1);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.labelName);
+            this.groupBox1.Location = new System.Drawing.Point(633, 36);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(649, 625);
+            this.groupBox1.TabIndex = 6;
+            this.groupBox1.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(-59, 121);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(783, 504);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            // 
             // Inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.ClientSize = new System.Drawing.Size(581, 138);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.labelName);
+            this.ClientSize = new System.Drawing.Size(1282, 656);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.menuStrip1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.MaximizeBox = false;
             this.Name = "Inicio";
             this.Text = "TuParley";
-            this.Load += new System.EventHandler(this.Inicio_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -168,6 +193,8 @@
         
         public System.Windows.Forms.Label labelName;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

@@ -15,21 +15,44 @@ namespace Parley
         public Inicio()
         {
             InitializeComponent();
-            
         }
-
-
 
         private void besibolToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Beisbol x = new Beisbol();
-            x.Show();
+            bool status = false;
+            foreach (Form formularios in Application.OpenForms)
+            {
+                if (formularios.GetType() == typeof(Beisbol))
+                {
+                    status = true;
+                }
+            }
+            if (status == false)
+            {
+                Beisbol x = new Beisbol();
+                x.MdiParent = this;
+                x.Show();
+            }
+     
         }
 
         private void futbolToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Futbol x = new Futbol();
-            x.Show();
+            bool status = false;
+            foreach (Form formularios in Application.OpenForms)
+            {
+                if (formularios.GetType() == typeof(Futbol))
+                {
+                    status = true;
+                }
+            }
+            if (status == false)
+            {
+                Futbol x = new Futbol();
+                x.MdiParent = this;
+                x.Show();   
+            }
+          
         }
 
         private void Cerrar_Click(object sender, EventArgs e)
@@ -44,9 +67,5 @@ namespace Parley
             MessageBox.Show($"Epale {labelName.Text}, bienvendio, espero no pierdas mucha plata", "Saludo");
         }
 
-        private void Inicio_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
